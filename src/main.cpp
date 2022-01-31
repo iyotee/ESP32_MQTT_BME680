@@ -4,6 +4,7 @@
 //  CREATED ON  : 31.01.2022            //
 //  VERSION     : 1.0                   //                                      
 //  DESCRIPTION : BME680 data over MQTT //
+//  LICENCE : GNU                       //
 //                                      //
 //////////////////////////////////////////
 
@@ -19,14 +20,14 @@ extern "C" {
 #include <Adafruit_BME680.h>
 #include <SPI.h>
 
-#define WIFI_SSID "SwissLabsBox2"  // WiFi SSID
-#define WIFI_PASS "JP3YMhAdx4rbvyru3S"  // WPA2 password
+#define WIFI_SSID "YOUR_SSID_HERE"  // WiFi SSID
+#define WIFI_PASS "YOUR_PASS_HERE"  // WPA2 password
 
 //Mosquitto broker on HomeAssistant
-#define MQTT_HOST IPAddress(192,168,1,4)
-#define MQTT_PORT 1883
-#define MQTT_USER "helitekmqttuser"
-#define MQTT_PASS "W3lc0m32h3l1t3k"
+#define MQTT_HOST IPAddress(192,168,1,X) //IP of your MQTT broker ( yes, it's separated with commas )
+#define MQTT_PORT 1883                //Port of your MQTT broker
+#define MQTT_USER "YOUR_MQTT_USER_HERE"  //MQTT user
+#define MQTT_PASS "YOUR_MQTT_PASS_HERE" //MQTT password
 
 //Temperature MQTT topics
 #define TEMP_TOPIC "helitek/sensor/temperature/temperature"
