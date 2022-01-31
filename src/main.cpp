@@ -1,3 +1,12 @@
+//////////////////////////////////////////
+//                                      //
+//  CREATED BY  : Jérémy Noverraz       //
+//  CREATED ON  : 31.01.2022            //
+//  VERSION     : 1.0                   //                                      
+//  DESCRIPTION : BME680 data over MQTT //
+//                                      //
+//////////////////////////////////////////
+
 #include <Arduino.h>
 #include <WiFi.h>
 extern "C" {
